@@ -404,6 +404,14 @@
     [_doneTextButton sizeToFit];
 }
 
+- (void)setCancelTextButtonFont:(UIFont *)cancelTextButtonFont {
+    [_cancelTextButton.titleLabel setFont:cancelTextButtonFont];
+}
+
+- (void)setDoneTextButtonFont:(UIFont *)doneTextButtonFont {
+    [_doneTextButton.titleLabel setFont:doneTextButtonFont];
+}
+
 #pragma mark - Image Generation -
 + (UIImage *)doneImage
 {

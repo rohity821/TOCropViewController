@@ -656,6 +656,9 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
         case TOCropViewControllerAspectRatioPreset16x9:
             aspectRatio = CGSizeMake(16.0f, 9.0f);
             break;
+        case TOCropViewControllerAspectRatioPreset2x3:
+            aspectRatio = CGSizeMake(2.0f, 3.0f);
+            break;
         case TOCropViewControllerAspectRatioPresetCustom:
             aspectRatio = self.customAspectRatio;
             break;
@@ -1038,6 +1041,15 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 - (void)setCancelButtonTitle:(NSString *)title {
     self.toolbar.cancelTextButtonTitle = title;
 }
+
+- (void)setCancelButtonFont:(UIFont *)cancelButtonFont {
+    self.toolbar.cancelTextButtonFont = cancelButtonFont;
+}
+
+- (void)setDoneButtonFont:(UIFont *)doneButtonFont {
+    self.toolbar.doneTextButtonFont = doneButtonFont;
+}
+
 
 - (TOCropView *)cropView {
     // Lazily create the crop view in case we try and access it before presentation, but

@@ -175,6 +175,18 @@
 @property (nullable, nonatomic, copy) NSString *cancelButtonTitle;
 
 /**
+ Font for the 'Done' button.
+ Setting this will override the Default which is system font.
+ */
+@property (nullable, nonatomic, copy) UIFont *doneButtonFont;
+
+/**
+ Font for the 'Cancel' button.
+ Setting this will override the Default which system font.
+ */
+@property (nullable, nonatomic, copy) UIFont *cancelButtonFont;
+
+/**
  Shows a confirmation dialog when the user hits 'Cancel' and there are pending changes.
  (Default is NO)
  */
