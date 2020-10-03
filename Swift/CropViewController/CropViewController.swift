@@ -175,6 +175,16 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
         return toCropViewController.titleLabel
     }
     
+    public var cancelButtonFont: UIFont? {
+        set { toCropViewController.cancelButtonFont = newValue }
+        get { toCropViewController.cancelButtonFont }
+    }
+    
+    public var doneButtonFont: UIFont? {
+        set { toCropViewController.doneButtonFont = newValue }
+        get { toCropViewController.doneButtonFont }
+    }
+    
     /**
      If true, while it can still be resized, the crop box will be locked to its current aspect ratio.
      
